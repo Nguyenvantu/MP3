@@ -1,0 +1,79 @@
+@import "../../styles/colors"
+
+.search-menu
+  position: absolute
+  padding-top: 10px
+  padding-bottom: 10px
+  top: 53px
+  border-radius: 4px
+  width: calc(100% - 20px)
+  max-height: calc(100vh - 120px)
+  overflow-y: scroll
+  z-index: 100
+  background: #fff
+  box-shadow: 0 0 8px rgba(0,0,0,.3)
+  ul
+    padding: 10px 20px
+    padding-top: 0
+.not-found-text
+  margin-top: 7px
+  font-size: 13px
+  color: #a0a0a0
+.top-result
+  .search-li-detail
+    // box-shadow: 0 0 8px rgba(0,0,0,.3)
+  > div
+    margin-top: 10px
+.search-li
+  &-title
+    font-size: 15px
+    color: #18b4c9
+    padding-bottom: 4px
+    border-bottom: 1px solid #ccc
+  &-detail
+    overflow: hidden
+    margin-top: 12px
+    font-size: 14px
+    img
+      display: block
+      width: 50px
+      height: 50px
+      float: left
+      border-radius: 5px 10px 0px 10px
+  &-info
+    width: calc(100% - 50px)
+    float: left
+    padding-left: 10px
+    height: 50px
+    padding-top: 3px
+    border-bottom: 1px inset
+    a
+      color: #32323d
+      font-weight: 700
+      font-size: 14px
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      &:hover
+        text-decoration: underline
+    > div
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+
+  &-artist
+    margin-top: 5px
+    font-size: 12px
+    color: #888
+
+.search-song
+  padding-left: 0
+  padding-top: 0
+  &-title
+    margin-bottom: 5px
+
+.search-li-info.search-song
+  &:hover
+    background: #fff
+
+

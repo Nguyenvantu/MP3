@@ -1,0 +1,143 @@
+@import "../../../styles/colors"
+@import "../../../styles/mixins"
+
+.song-body
+  padding: 20px 0px
+  background: white
+  padding-bottom: 200px
+  &-lyric
+    background-color: #ffffff
+    padding: 10px
+    // border-radius: 5px
+    &-header
+      display: flex
+      margin-bottom: 10px
+      &-left
+        color: #000000
+        width: 70%
+      &-right
+        width: 30%
+        text-align: center
+        line-height: 20px
+        display: flex
+        justify-content: center
+        color: #7b1111
+        align-items: center
+        i
+          color: #7b1111
+          font-size: 20px
+          width: 15%
+          &.active
+            &:hover
+              color: red
+              cursor: pointer
+
+    &-content
+      color: #5d5959
+      line-height: 25px
+
+.song-header
+  height: 60px
+  color: white
+  position: relative
+  background: #114357  /*fallback for old browsers*/
+  background: -webkit-linear-gradient(to right,#114357, #F29492)  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #114357, #F29492) /* W3C, IE 1  0+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  > span
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translateY(-50%)
+
+  &-info
+    width: 70%
+    height: 60px
+    float: left
+    padding-left: 20px
+  &-img
+    height: 50px
+    background-size: 100%
+  &-song-title
+    font-size: 16px
+    margin-top: 5px
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+  &-song-artist
+    margin-top: 5px
+    a
+      color: #73C6B6
+      &:hover
+        color: #45B39D
+  &-actions
+    width: 20%
+    float: right
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+
+    button
+      margin-left: 15px
+      cursor: pointer
+    i
+      color: #fff !important
+      font-size: 35px
+    .ion-android-share-alt
+      font-size: 25px
+  p
+    margin: 5px
+  &-image
+    width: 20%
+    float: left
+  img
+    height: 50px
+    width: 50px
+    border-radius: 100%
+  &-content
+    width: 80%
+    float: left
+    p
+      font-size: 13px
+      color: $grey-1
+
+.suggested-section
+  h3
+    font-weight: bold
+    font-size: 17px
+    text-transform: uppercase
+
+.show-full-lyric
+  color: #7b1111
+  &:hover
+    cursor: pointer
+    color: red
+
+.header-share
+  position: absolute
+  right: 0
+  top: 50px
+  z-index: 3
+
+.header-share-enter
+  opacity: 0.1
+
+.header-share-enter-active
+  // transform: scale(1.2, 1.2)
+  opacity: 1
+  transition: opacity 600ms ease-in
+  // transition: transform 500ms ease-in
+  .social-share
+    transform: rotate(360deg)
+    transition: transform 1000ms
+
+.header-share-exit
+  // opacity: 1
+
+.header-share-exit-active
+  // opacity: 0.01
+  // transition: opacity 300ms ease-in
+  .social-share
+    transform: scale(0, 0)
+    transition: transform 400ms

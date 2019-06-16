@@ -1,0 +1,117 @@
+@import "../../../styles/colors"
+@import "../../../styles/mixins"
+
+.album-playlist
+  padding: 14px
+  width: 70%
+  float: left
+  &-thumb
+    height: 120px
+    width: 120px
+    float: left
+  &-header
+    overflow: hidden
+
+.ap-info
+  height: 120px
+  width: calc(100% - 120px)
+  float: left
+  color: $grey-text
+  padding:
+    left: 20px
+
+.ap-title
+  font-size: 20px
+  color: #3eb4bf
+
+.ap-artist
+  margin: 10px 0
+
+.ap-releaseY
+  margin-bottom: 20px
+
+.album-playlist-content
+  margin-top: 20px
+  button
+    margin-top: 10px
+
+  .karaoke-info
+    top: 30px
+
+// .album-playlist-artist
+//   &-thumb
+//     height: 90px
+//     width: 90px
+//     border-radius: 100px
+//     float: left
+
+.album-playlist-artist-info
+  margin: 20px 0
+  overflow: hidden
+  margin-bottom: 60px
+
+.album-playlist-artist-description
+  font-size: 15px
+  color: $grey-text
+  p
+    margin: 0
+    line-height: 1.5rem
+  img
+    float: left
+    width: 180px
+    margin-right: 20px
+    border-radius: 5px
+
+.ap.playlist-tracks
+  margin-top: 20px
+  width: 100% !important
+  @include box-shadow
+
+.show-info-btn
+  background-image: linear-gradient(to right, #02b3e4 0%, #02ccba 100%)
+  color: white !important
+  padding: 10px
+  margin-top: 3px
+  border-radius: 3px
+  
+.suggested-albums
+  float: left
+  width: calc(30% - 15px)
+  margin-top: 10px
+  margin-left: 15px
+  margin-bottom: 60px
+   
+.suggested-album
+  margin-top: 10px
+  overflow: hidden
+  padding-bottom: 10px
+  border-bottom: 1px solid #D5DBDB
+  display: flex
+  align-items: center
+  > a 
+    width: 50px
+    height: 50px
+  &-info
+    padding: 0 0 0 10px
+    font-family: "Roboto", sans-serif
+    overflow: hidden
+    width: calc(100% - 50px)
+  &-name
+    display: block
+    font-size: 14px
+    color: #27859b
+    margin-bottom: 5px
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+    &:hover
+      text-decoration: underline
+  &-artist
+    a
+      font-size: 12px
+      color: #695d5d
+
+  img
+    width: 100%
+    height: 100%
+    border-radius: 5px

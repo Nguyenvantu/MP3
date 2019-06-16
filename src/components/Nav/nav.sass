@@ -1,0 +1,125 @@
+@import "../../styles/colors"
+
+nav
+  height: 50px
+  background: #fff
+  margin: auto
+  position: fixed
+  width: 100%
+  z-index: 3
+  top: 0
+  left: 0
+  border-bottom: 1px solid #e8e8e8
+  .ant-menu-item, .ant-menu-submenu-title
+    padding: 0 14px
+  .ant-menu-horizontal
+    line-height: 48px
+    flex-shrink: 0
+    text-transform: capitalize
+    border-bottom: none
+  .ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu
+    font-weight: bold
+  .nav-container
+    max-width: 1026px
+    margin: auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+
+.logo
+  height: 100%
+  min-width: 49px
+  padding: 0 7px
+  text-decoration: none !important
+  flex-shrink: 0
+  a
+    display: inline-block
+    color: #000000
+    line-height: 50px
+    font-size: 30px
+    font-family: 'Cabin Sketch', cursive
+    font-weight: bold
+.searchBar
+  width: 100%
+  padding: 7px 10px
+  float: left
+  min-width: 300px
+  position: relative
+  input
+    width: 100%
+    background: transparent
+    outline: 0
+    font-family: "Roboto", sans-serif
+    color: #000
+    border: 1px solid #18b4c9
+    display: block
+    margin: 0
+    font-size: 15px
+    padding: 8px 24px 8px 40px
+    border-radius: 4px
+
+.search-wrapper
+  position: relative
+  i
+    color: #626262
+    position: absolute
+    font-size: 22px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+
+.userWrapper
+  max-width: 130px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  img 
+    width: 33px
+    border-radius: 50%
+    height: 33px
+  span 
+    margin-left: 8px
+    font-size: 13px
+    color: #878787
+    font-weight: bold
+.navRight
+  float: left
+  height: 50px
+  overflow: hidden
+  position: relative
+
+.user
+  height: 50px
+  width: 23%
+  display: inline-block
+  white-space: nowrap
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 50px
+    font-size: 13px
+    padding: 0px 5px
+    width: 33%
+    float: left
+    color: white
+
+    &:first-child
+      color: #15d2fd
+    img
+      width: 15px
+      height: 15px
+
+@media screen and (max-width: 768px) 
+  nav 
+    .ant-menu-horizontal
+      overflow: hidden
+      flex-shrink: unset
+    .nav-container 
+      justify-content: unset
+  .logo
+    display: none !important
+  .searchBar 
+    flex-shrink: 0
+    width: auto

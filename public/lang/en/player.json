@@ -1,0 +1,21 @@
+{
+  "nextUp": "Next Up",
+  "clear": "Clear",
+  "suggested": "Maybe you want to listen",
+  "download": "Download the song",
+  "addToPlayList": "Add this song to your playlists",
+  "processDownload": "The song will be downloaded in a few seconds",
+  "addToNextUp": "Add this song to next up",
+  "play": "Play",
+  "lyric": "Lyric",
+  "version": "Version",
+  "show": "Show more",
+  "hide": "Collapse",
+  "noDataLyric": "No data. This lyric will be update soon!",
+  "pause": "Pause",
+  "next": "Next",
+  "back": "Back",
+  "loop": "Loop this song",
+  "random": "Play ramdom",
+  "share": "Share on"
+}
